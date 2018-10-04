@@ -5,7 +5,6 @@
 ** Count number of characters
 */
 
-
 int my_strlen(char const * str)
 {
 	int i = 0;
@@ -14,9 +13,4 @@ int my_strlen(char const * str)
 		i++;
 	}
 	return i;
-}
-
-void main()
-{
-    printf("Characters: %d", my_strlen("Coucou"));
 }
