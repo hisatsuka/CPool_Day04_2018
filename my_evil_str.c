@@ -17,7 +17,7 @@ char *my_evil_str(char *str)
         tmp = str[i];
 
         str[i] = str[(size - 1) - i];
-        str[(size - 1)- i] = tmp;
+        str[(size - 1) - i] = tmp;
     }
     return str;
 }
