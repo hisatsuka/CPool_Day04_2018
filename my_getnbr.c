@@ -5,8 +5,6 @@
 ** Show all integrers in char
 */
 
-int my_strlen(char const * str);
-
 int my_getnbr(char const *str)
 {
     int nb = 0;

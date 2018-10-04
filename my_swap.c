@@ -7,12 +7,12 @@
 
 void my_swap(int *a, int *b)
 {
-	int swap1;
-	int swap2;
+    int swap1;
+    int swap2;
 
-	swap1 = *a;
-	swap2 = *b;
+    swap1 = *a;
+    swap2 = *b;
 
-	*a = swap2;
-	*b = swap1;
+    *a = swap2;
+    *b = swap1;
 }
