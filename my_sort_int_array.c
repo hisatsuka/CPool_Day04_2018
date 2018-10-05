@@ -12,13 +12,13 @@ void my_sort_int_array(int *array, int size)
     int check_size = 0;
     int nb = 0;
 
-    while(check_size < size)
+    while (check_size < size)
     {
         nb = 0;
 
-        while(nb < (size - 1))
+        while (nb < (size - 1))
         {
-            if(array[nb] > array[nb + 1])
+            if (array[nb] > array[nb + 1])
             {
                 my_swap(&array[nb], &array[nb + 1]);
             }

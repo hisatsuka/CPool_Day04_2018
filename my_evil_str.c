@@ -12,7 +12,7 @@ char *my_evil_str(char *str)
     int tmp;
     int size = my_strlen(str);
 
-    for(int i = 0; i < size / 2; i++)
+    for (int i = 0; i < size / 2; i++)
     {
         tmp = str[i];
 
