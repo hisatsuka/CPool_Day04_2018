@@ -12,7 +12,6 @@ int is_valid_int(long nb)
 
     else
         return (nb);
-    //return ((nb > 2147483647 || nb < -2147483648) ? 1 : 0);
 }
 
 int my_getnbr(char const *str)
@@ -29,15 +28,7 @@ int my_getnbr(char const *str)
                 nb = ((nb * 10) + (str[i] - '0'));
             if (!(str[i + 1] >= '0' && str[i + 1] <= '9'))
                 return (is_valid_int(nb * specialchar));
-                //return (nb > 2147483647 || nb < -2147483648 ? 0 : (nb * specialchar));
         }
     }
     return (is_valid_int(nb * specialchar));
-    //return ((nb > 2147483647 || nb < -2147483648) ? 0 : (nb * specialchar));
-}
-
-void main()
-{
-    printf("%d\n", my_getnbr("-2147483647"));
-    printf("%d\n", my_getnbr("-50"));
 }
