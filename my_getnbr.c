@@ -5,6 +5,8 @@
 ** Show all integrers in char
 */
 
+int my_strlen(char const *str);
+
 int is_valid_int(long nb)
 {
     if(nb > 2147483647 || nb <= -2147483648)
@@ -16,6 +18,9 @@ int is_valid_int(long nb)
 
 int my_getnbr(char const *str)
 {
+    if(my_strlen(str) > 12)
+        return (0);
+
     long nb = 0;
     int specialchar = 1;
     for (int i = 0; str[i]; i++)
