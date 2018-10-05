@@ -9,7 +9,7 @@ int my_strlen(char const *str);
 
 int is_valid_int(long nb)
 {
-    if(nb > 2147483647 || nb <= -2147483648)
+    if(nb > 2147483647 || nb < -2147483648)
         return (0);
 
     else
